@@ -1,4 +1,164 @@
-h1{
-  text-align: center;
-  color: pink
+html{
+  height: 100%;
 }
+body {
+  font-family: 'Dongle', sans-serif;
+  background-image: url(pexels-magda-ehlers-2114014.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow:inset 0 -3em 3em rgba(0,0,0,0.1),
+  0 0  0 2px rgb(255,255,255),
+  0.3em 0.3em 1em rgba(0,0,0,0.3);
+  background: rgba (255,255,255,.2);
+}
+.box {
+  position: relative;
+  width: 650px;
+  height: 800px;
+  background: transparent;
+  border: 3px solid #fff;
+  border-radius: 20px;
+  margin: 100px 150px;
+
+}
+.box::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.26);
+  border-radius: 20px;
+  z-index: -1;
+}
+.locationButton {
+  border-radius: 8px;
+  border-style: solid;
+  border-color: #fff;
+  height: auto;
+  width: 40px;
+  position: relative;
+  left: -2px;
+}
+form{
+  background-color: transparent;
+  margin: 0 auto;
+  padding: 20px 0 0 0;
+  text-align: center;
+  font-size: 400;
+}
+input, .input{
+  border-radius: 8px;
+  border-style: solid;
+  border-color: #fff;
+  height: auto;
+  width: 300px;
+}
+.button {
+  border-radius: 8px;
+  border-style: solid;
+  border-color: #fff;
+  height: auto;
+  width: 60px;
+}
+h1 
+  {
+    margin: auto 0;
+    text-align: center;
+    color:#223146 ;
+    padding-bottom: 0;
+  }
+ 
+.degree {
+  font-size: 125px;
+  font-weight: 700;
+}
+.weatherEmoji {
+  padding: 0 0 0 25px;
+  font-size: 95px;
+  position: relative;
+  top: 15px;
+}
+.degree, .weatherEmoji {
+  display: inline-block;
+}
+h5 {
+  text-align: center;
+  position: relative;
+  bottom: 45px;
+  right: 85px;
+  font-weight: 400;
+  font-size: 30px;
+}
+.typeOfWeather {
+  display: inline-block;
+  position: relative;
+  bottom: 30px;
+  left: 300px;
+}
+.day {
+  display: inline-block;
+  position: relative;
+  left: 170px;
+  bottom: 10px;
+}
+.typeOfWeather, .day {
+  font-weight: 400;
+  font-size: 33px;
+  padding: 0 0 10px 0;
+}
+
+li {
+  display: block;
+  list-style-type: none;
+  position:relative;
+  left: 150px;
+  margin: 60px, 0;
+  text-align: center;
+  font-weight: 400;
+  font-size: 30px;
+  bottom: 30px;
+}
+
+h2 {
+  text-align: center;
+  display: block;
+  margin: 60px,0;
+  font-size: 90px;
+  font-weight: 400;
+  color:#223146 ;
+  position: relative;
+}
+
+.units {
+  font-size: 30px;
+  font-weight: 700;
+  position: relative;
+  top: -34px;
+}
+.weather {
+  text-align: center;
+  margin: auto 0;
+  padding-left: 100px;
+  font-size: 30px;
+  font-weight: 400;
+  color:#223146 ;
+}
+.col-2 {
+  position: relative;
+  bottom: 15px;
+}
+footer{
+  font-size: 30px;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+position: relative;
+top: 30px;
+}
+
+
