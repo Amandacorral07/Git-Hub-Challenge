@@ -152,11 +152,8 @@ h2 {
   position: relative;
   bottom: 15px;
 }
-#open-source {
+.open-source {
   text-decoration: none;
-  font-size: 30px;
-  font-weight: 300;
-  color: #fff;
 
 }
 footer{
