@@ -153,9 +153,11 @@ h2 {
   bottom: 15px;
 }
 #open-source {
+  text-decoration: none;
   font-size: 30px;
   font-weight: 300;
   color: #fff;
+
 }
 footer{
   font-size: 30px;
