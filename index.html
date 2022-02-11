@@ -3,15 +3,114 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=>, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Life+Savers:wght@400;700&family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="pexels-magda-ehlers-2114014.jpg" class="img">
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 <body>
+  <div class="box">
+       <form id ="city-input">
+        <input type="button" class="locationButton" value="📍" alt="location" id="near-me">
+         <input type="search" placeholder="What is the weather like in..." autocomplete="off" autofocus="on" id="input"/>
+         <input type="submit" class="button" value="Search"/>
+       </form>
+  <br />
+  <br />
   <h1>
-    Git Hub Challenge
-  </h1>
+   <div class="degree">
+     <span class= "temperature" id="temperature">
+      62.6
+     </span>
+   <span class="units">
+<a href="#" id="celsius-link">
+  °C
+</a>
+ | 
+<a href="#" id="fahrenheit-link">
+  °f
+</a>
+   </span>
+   </div>
+      <div class="weatherEmoji">
+        ☀️
+      </div>
+    </h1>
+    <h5>
+      L: <span id="minTemp">36</span>°f | H:<span id="maxTemp">67</span> °f
+    </h5>
+    <div class="row">
+            <div class="col-12">
+              <span class="day" id= "time">
+              Saturday 11:45 
+            </span>
+            </div>
+              <span class="typeOfWeather" id="description">
+                Sunny
+              </span>
+      <div class ="col-6">
+        <ul>
+        <li>
+          Humidity: <span id="humidity">65</span>%
+        </li>
+            <li>
+              Wind: <span id="wind">5</span>km/h
+            </li>
+        </ul>
+      </div>
+      </div>
+  <h2 id="city">
+    San Luis Obispo, CA
+  </h2>
+  <p>
+    <div class="container weather">
+      <div class="row">
+        <div class="col-2">
+          SUN 🌤️
+        </div>
+        <div class="col-2">
+          MON ☀️
+        </div>
+        <div class="col-2">
+          TUES ☀️
+        </div>
+        <div class="col-2">
+          WED 🌤️
+        </div>
+        <div class="col-2">
+          THURS ☀️
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2">
+          41°/59°
+        </div>
+        <div class="col-2">
+          36°/67°
+        </div>
+        <div class="col-2">
+          39°/67°
+        </div>
+        <div class="col-2">
+          34°/66°
+        </div>
+        <div class="col-2">
+          37°/69°
+        </div>
+      </div>
+    </div>
+  </p>
+  <footer>
+    Coded by Amanda Corral
+  </footer>
+</div>
 </body>
-<script src="script.js"
-></script>
+<script src= "script.js"></script>
 </html>
